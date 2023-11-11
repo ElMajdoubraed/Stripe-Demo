@@ -1,0 +1,23 @@
+{
+  "name": "stripe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "pm2-server": "cd backend && pm2 start dist/server.js",
+    "pm2-client": "cd client && pm2 start npm -- run dev",
+    "pm2": "npm run pm2-server && npm run pm2-client",
+    "pm2-stop": "pm2 stop all",
+    "pm2-delete": "pm2 delete all",
+    "pm2-restart": "pm2 restart all",
+    "pm2-list": "pm2 list",
+    "pm2-log": "pm2 logs",
+    "pm2-status": "pm2 status",
+    "init": "npm install && cd client && npm install && cd .. && cd backend && npm install",
+    "build": "npm run init && cd client && npm run build && cd .. && cd backend && npm run build",
+    "start": "npm run build && npm run pm2"
+  },
+  "dependencies": {
+    "pm2": "^5.3.0"
+  }
+}
