@@ -14,6 +14,10 @@
         <code>npm run start</code>
 </div>
 
-Then check http://localhost:3000/
+<div>
+    Then check http://localhost:3000/
+</div>
 
-<small>Please dont forget to stop pm2 when you are done with pm2 stop all and then pm2 delete all!</small>
+<div>
+    <small>Please dont forget to stop pm2 when you are done with pm2 stop all and then pm2 delete all!</small>
+</div>
